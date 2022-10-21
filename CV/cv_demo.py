@@ -1,4 +1,3 @@
-
 import cv2
 import numpy as np
  
@@ -46,7 +45,6 @@ def draw_shape(open_img,gray_img):
     box = cv2.boxPoints(rect)
     box = np.int0(box)
     cv2.drawContours(src,[box],0,(0,0,255),3) 
-    #开运算
 
     M = cv2.moments(cnt)
     center_x = int(M['m10']/M['m00'])
