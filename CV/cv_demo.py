@@ -1,10 +1,9 @@
-
 import cv2
 import numpy as np
  
 
 def ReadImg():
-    img = cv2.imread('/root/Trash_Robo/CV/TestImg/1.png')
+    img = cv2.imread('./TestImg/1.png')
     cv2.imshow('src',img)
     cv2.waitKey(0)
     return img
